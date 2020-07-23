@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="staticrypt-html">
 <head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <br><center><a href="index.html" class="button">Return Home</a></center>
     <meta charset="utf-8">
     <title>Protected Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,7 +64,7 @@
         }
 
         .staticrypt-form .staticrypt-decrypt-button:hover, .staticrypt-form .staticrypt-decrypt-button:active, .staticrypt-form .staticrypt-decrypt-button:focus {
-            background: #43A047;
+            background: LightCyan;
         }
 
         .staticrypt-html {
@@ -71,11 +73,11 @@
 
         .staticrypt-body {
             margin-bottom: 1em;
-            background: #76b852; /* fallback for old browsers */
-            background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-            background: -moz-linear-gradient(right, #76b852, #8DC26F);
-            background: -o-linear-gradient(right, #76b852, #8DC26F);
-            background: linear-gradient(to left, #76b852, #8DC26F);
+            background: LightCyan; /* fallback for old browsers */
+            background: -webkit-linear-gradient(right, LightCyan, LightCyan);
+            background: -moz-linear-gradient(right, LightCyan, LightCyan);
+            background: -o-linear-gradient(right, LightCyan, LightCyan);
+            background: linear-gradient(to left, LightCyan, LightCyan);
             font-family: "Arial", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -117,7 +119,7 @@
 <div class="staticrypt-page">
     <div class="staticrypt-form">
         <div class="staticrypt-instructions">
-            <p class="staticrypt-title">Protected Page</p>
+            <p class="staticrypt-title">Secret Information</p>
             <p></p>
         </div>
 
@@ -127,10 +129,10 @@
             <input id="staticrypt-password"
                    type="password"
                    name="password"
-                   placeholder="passphrase"
+                   placeholder="Password"
                    autofocus/>
 
-            <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
+            <input type="submit" class="staticrypt-decrypt-button" value="Enter"/>
         </form>
     </div>
 
@@ -6164,7 +6166,7 @@
         e.preventDefault();
 
         var passphrase = document.getElementById('staticrypt-password').value,
-            encryptedMsg = '6bb537c00229386a5ad2940b94da141af6a2dbaa9ab1eff171dd13786e0ba2722e4ca824a7a7fa4b6155cd89c3d6c153bf09daa62b67fb0b5bb7721d563fea93g9oVR2uWH6Z4J5CjGXr3cBR4AEcNAoXBOw1OfhrUH39JiMkRewpL5WKgWUkiiGY2LTC9WxmC9YDe8KfN5pLObjLkejZhcFE8uR4uGiu5eRqouqniPvyfuaGHt0m9jQlW5PF7YAh6//kgNR8uDUEuBkNpKBd40wS0RxPi72rSyuJGcTc3o4HRgWhJiY1sfaglUvpXe2qi3AUJJ1YW4jCGo8Twmad2kmRdLqVxS0QE5gulp7j9hftyPfiMOF9qFZ8ZpzbsGsG9HaN89mjepZ9RHWL2HoX7TRfOOp4RMj+roNph57dPuVAKRuwStxki31Wk6g7JMEPkTcRWUFg2JRBfLJMjQwSsE3IvRu+uCMjknpQZE9dgp24CHd17qqpNm59BBxzNmrPujiUUuLy80G0xL2rdFSMOOuEs10FIC5HgV5j88INcDIzHoNyy2DEoBem+1motjUTyzU3xixvPIB0XhGhn2Hhg7SRZxXxoK2TZqNkTdEDN4Ponww3kLQ7/cqJk4BvNWk0L0BEVV+xJLUaSXKgsDoYCuJya/ofjnhKJaVUj6WSnX6L9xiYRFGW329+oJ8DW46BylS7RtyjM3Y7QCR//WBXgTNAnj5GIbsgLZIijgNIUtrEE1kLuKWeRrSPzl5cPHX5gHDWr4DKdJqcNP+Dm96+Eaom749yRIbPKTp3vQSapdeYyVvPRmaMDbSN6LoG5Osx0Rr24k/Nntno9N6RLr5ywCQFR4jzGX2s+OxwAHJsPBccoFvrr8JUPqTrDHc+td/KVguV00ESKU7yDNCLsTYuGuDuyZTpOxnYZ/V9g7GLOMKJizw0+qPMfGUmSHj5J49DrJ5+AI3MjEAkFqZII3yxTLg6vq+ix5r21rNkEap+jyx7DMjrsAFK48MDQDM3fWxM0YOnsqxL9chu04XIEV3XUkRV2A9FaGeqkUvFDoZqDePE7KKoYg4jJtL0kdNAEgqHElxKycNpHcbzsjglvHcf51eKGC8uUkgRu++7gpmePxWrd2Tf2hQDk0bMYKkoUPjG8ZYraXpt/TDvzA1wld054HA0eM3ZWk4bWkdwSdcr4hahgju+C0Ky06Y6SW45NpnXJCVnNlnzwNXh7L8Yo5crU/Jc+nt4fQjB5WNqAVj3UkffDuUYua0NEQE7ToJgeOGLUEL0lPumu2E6brlk/o5ZcBC/BUKtOCZKnkJKdzq1kFbA9aBLMGYDbbb7Ds/3fHwUgGxlzsHzaHVOjZEqiKIvzkIGxc8kBD45PHv2fj+KBmg7vhWDEMsOYlVLBGNpHVcvT3wT7j+PEQXRbvTx0xKoIJ/55ETmnkEkVaOw=',
+            encryptedMsg = '98d091dc1a78ed818e102ce340b61cd14a360fa26bafea0e6636aade85a490062ecf3bb4abc13f8b2c61aadf3dbad2b159e9b327342c7ccb9ee734a15a1ada75LMmiiUG7FGy6M7o67tUBEOWzhtqjyb7rfCP7xM+/zU/mQEUKJ09n51IGtkCpjh7HAH1uT3uosmMYjm2azX67LNpNCraQ0tTxQyVWnNPnGc89kgaRHziyuiagC9Q3DjgsyCyR8OrzZAY+kbbmWLcBfVAfpigdiCuK6OMYcp0fep7u4hGEyqx0inIRFsyREninPfnxLVTvdIxEZPGiSjlDPnJ8Gj3sW55LYiCvtqX4tiu0LrA3UYxgK3mQedObXOseDD/m6ghH4DGZFLszlrcE38/FLrRUkDPYfrpzKIrfKTaEOs6XtknwZTIMgc9SNYouiXysE6fFvlaNjVodWXhylcOuUFYWV13rCqNMnrscs0ugm2d7Ro16PfySJ9P5XC6DbwWC95lsFkh4uDRaqEE9x1QW9ToYTmLHyvXYaWTKjxxJnbZlts9ETZuar0f8yCJjhdNMZ1FMwgtk5jrucIrzCWiuAlq6UstKwmH2WQtlWVkATJnvVhwZLYCNVc85h/FYcrUg2tqilIYD7xN2SMwOebOEGp2EdWsGKjFU5h4HlmZ+YqtdYno43UFIfTvgCStBydEf8fjVE361avZiSjHSU2LQpyHEJvqgh/kkFGmjYL/ovxIJbUamoJlDR+srU19xp8ZFGV390RPgVnrTzL3BmHS+iFwh7m5F7LzOeJ0mfYJFyrS/PdhFlefwTw++1nawfjHoHQzx1V3ZSeBJwRaMK+U/A6g1zRgPBFdCfvyM9NFF2iWgaSxDm8zVHlfyi+hSXt2UxINMrUgVDEK55cFxhSz6IqmdI1Yz22PNMotJF0r6iTxcYCt1ztMX2DGOen2r+peM5T471m7qUwhuQOFAJ2a9udcDvMvpcJ+948rzWjXn7HaQc4EmgEEAlAADu36LywVL6oG7aoxJP8PsP9VArRAaW7uEf9qQPC0Gxj6so2PsykBeYX/DCLgBTuRF1eYgdyqVfXAZXMB7ZxtOfzJ1v9wiK1nvsvOlSMQvFLfMny1B/n1Cbv4gMKagNYniNyZlRfdH5hZdwbc0ASOQ3z+yS1nkovHDJdWjqATMYWDy3z4LjsXW0dW5jQF9NxTXIEkOaw206U2amg72neUAMnZdv2L2wKJwWpSp9rXlB9amPyIdH4AEQkKl5PN+VggnwG04oabFZEbo00sgCbMTwuiRTvZ/rhemglDGoTCeUTiGkvOdnNqXIF7KdLJacB8/vSmyCZ+wfHmWhkO6wnds7TLcRwP9s6JsZJdVrsF8k8hVrVjs6COHLtCxlN41sHZv/KZbm05m1BddoBY37CVF3PipTNuUDTzwCjmt1hM+9+UUqj8eeN5HuKKxd09m6spdnbtsOW1gEUVe1St9AP4hBfTONOIImqBfL1E4i8gXW/lazkBL1Uymf1zdoRM5H6N3cKInxoF/ncMb5cSmNR25fvEBfCMJzkzLkkj2izGQAvjJpMSfOazpUneYHrT9AVRQ+JXUHnvS1nm4E7tfEhpqkJJ7aw==',
             encryptedHMAC = encryptedMsg.substring(0, 64),
             encryptedHTML = encryptedMsg.substring(64),
             decryptedHMAC = CryptoJS.HmacSHA256(encryptedHTML, CryptoJS.SHA256(passphrase).toString()).toString();

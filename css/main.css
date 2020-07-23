@@ -48,3 +48,6 @@ ol{
     margin-right: auto;
     width: 50%;
 }
+.inline-block {
+    display: inline-block;
+ }
