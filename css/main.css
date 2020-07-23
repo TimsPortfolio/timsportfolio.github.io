@@ -1,5 +1,5 @@
 body {
-    background-color: LightCyan;
+    background-color: Ivory;
 }
 p{
     font-size: 20px;
@@ -35,23 +35,23 @@ ul{
 .menu {
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    background-color: #9a9edd;
-    color: #000000;
+    background-color: cornflowerblue;
+    color: black;
     border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
     border-top: 0px solid #000000;
     border-right: 0px solid #000000;
     border-bottom: 0px solid #000000;
     border-left: 0px solid #000000;
     text-align: center;
 }
-.button {
-    font: bold 14px Georgia, 'Times New Roman', Times, serif;
+.menu:hover{
+    font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    background-color: darkgreen;
-    color: white;
+    background-color: cornflowerblue;
+    color: lightgray;
     border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    padding: 1px 10px 1px 10px;
     border-top: 0px solid #000000;
     border-right: 0px solid #000000;
     border-bottom: 0px solid #000000;
@@ -61,9 +61,28 @@ ul{
 .select {
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    background-color: #dcdd9a;
-    color: #000000;
-    border-radius: 20px;
+    /*background: linear-gradient(to bottom, darkblue 0%, darkslateblue 100%);*/
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+    padding: 1px 10px 1px 10px;
+    border-top: 0px solid #000000;
+    border-right: 0px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-left: 0px solid #000000;
+    text-align: center;
+}
+.menubar{
+    background-color:cornflowerblue;
+    color:white;
+    padding:1px;
+}
+.button {
+    font: bold 14px Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
     padding: 5px 10px 5px 10px;
     border-top: 0px solid #000000;
     border-right: 0px solid #000000;
