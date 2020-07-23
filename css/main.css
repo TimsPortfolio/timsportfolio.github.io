@@ -7,30 +7,25 @@ p{
 }
 h1{
     text-align: center;
+    font-size: 40px;
 }
 h2{
     text-align: center;
+    font-size: 30px;
 }
 h3{
     text-align: center;
+    font-size: 25px;
 }
 ol{
     font-size: 20px;
     text-align: center;
-    li
-    st-style-position: inside;
+    list-style-position: inside;
 }
 ul{
     font-size: 20px;
     text-align: center;
-    li
-    st-style-position: inside;
-}
-pre code {
-    background-color: #eee;
-    border: 1px solid #999;
-    display: block;
-    padding: 10px;
+    list-style-position: inside;
 }
 .block{
     background-color: black;
