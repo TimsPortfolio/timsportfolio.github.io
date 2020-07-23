@@ -77,6 +77,11 @@ ul{
     color:white;
     padding:1px;
 }
+p.story{
+    text-align: justify;
+    text-indent: 50px;
+
+}
 .button {
     font: bold 14px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
