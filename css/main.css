@@ -11,16 +11,50 @@ h1{
 h2{
     text-align: center;
 }
+h3{
+    text-align: center;
+}
 ol{
     font-size: 20px;
     text-align: center;
-    list-style-position: inside;
+    li
+    st-style-position: inside;
 }
-.button {
+ul{
+    font-size: 20px;
+    text-align: center;
+    li
+    st-style-position: inside;
+}
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 10px;
+}
+.block{
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+}
+.menu {
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     background-color: #9a9edd;
     color: #000000;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    border-top: 0px solid #000000;
+    border-right: 0px solid #000000;
+    border-bottom: 0px solid #000000;
+    border-left: 0px solid #000000;
+    text-align: center;
+}
+.button {
+    font: bold 14px Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: white;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     border-top: 0px solid #000000;
