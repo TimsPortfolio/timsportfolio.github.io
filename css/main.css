@@ -1,3 +1,4 @@
+/*MAIN TEXT*/
 body {
     background-color: Ivory;
 }
@@ -27,49 +28,27 @@ ul{
     text-align: center;
     list-style-position: inside;
 }
-.block{
-    background-color: black;
-    color: white;
-    padding-left: 10px;
-}
+
+/*MENU BAR*/
 .menu {
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    background-color: cornflowerblue;
     color: black;
-    border-radius: 10px;
     padding: 1px 10px 1px 10px;
-    border-top: 0px solid #000000;
-    border-right: 0px solid #000000;
-    border-bottom: 0px solid #000000;
-    border-left: 0px solid #000000;
     text-align: center;
 }
 .menu:hover{
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    background-color: cornflowerblue;
     color: lightgray;
-    border-radius: 10px;
     padding: 1px 10px 1px 10px;
-    border-top: 0px solid #000000;
-    border-right: 0px solid #000000;
-    border-bottom: 0px solid #000000;
-    border-left: 0px solid #000000;
     text-align: center;
 }
 .select {
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    /*background: linear-gradient(to bottom, darkblue 0%, darkslateblue 100%);*/
-    background-color: cornflowerblue;
     color: white;
-    border-radius: 10px;
     padding: 1px 10px 1px 10px;
-    border-top: 0px solid #000000;
-    border-right: 0px solid #000000;
-    border-bottom: 0px solid #000000;
-    border-left: 0px solid #000000;
     text-align: center;
 }
 .menubar{
@@ -77,16 +56,18 @@ ul{
     color:white;
     padding:1px;
 }
+
+/*OTHER CUSTOM CSS*/
 p.story{
     text-align: justify;
     text-indent: 50px;
 
 }
 .button {
-    font: bold 14px Georgia, 'Times New Roman', Times, serif;
+    font: bold 20px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    background-color: darkgreen;
-    color: white;
+    background-color: cornflowerblue;
+    color: black;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
     border-top: 0px solid #000000;
@@ -103,4 +84,13 @@ p.story{
 }
 .inline-block {
     display: inline-block;
+ }
+ h1.title{
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ a.title{
+    text-decoration: none;
+    color: black;
  }
