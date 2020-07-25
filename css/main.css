@@ -28,36 +28,9 @@ ul{
     text-align: center;
     list-style-position: inside;
 }
-
-/*MENU BAR*/
-.menu {
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: black;
-    padding: 1px 10px 1px 10px;
-    text-align: center;
-}
-.menu:hover{
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: lightgray;
-    padding: 1px 10px 1px 10px;
-    text-align: center;
-}
-.select {
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: white;
-    padding: 1px 10px 1px 10px;
-    text-align: center;
-}
-.menubar{
-    background-color:cornflowerblue;
-    color:white;
-    padding:1px;
-}
-
-/*OTHER CUSTOM CSS*/
+  /******************/
+ /*OTHER CUSTOM CSS*/
+/******************/
 p.story{
     text-align: justify;
     text-indent: 50px;
@@ -86,9 +59,12 @@ p.story{
     display: inline-block;
  }
  h1.title{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
     text-decoration: none;
+ }
+ h1.head{
+    font-size: 45px;
  }
  a.title{
     text-decoration: none;
