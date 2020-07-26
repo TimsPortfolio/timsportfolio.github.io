@@ -1,3 +1,4 @@
+/*DO NOT LINK TO THIS CSS PAGE!*/
 .block{
     background-color: black;
     color: white;
@@ -49,4 +50,11 @@
     background-color:cornflowerblue;
     color:white;
     padding:1px;
+}
+.menu {
+    font: bold 30px Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+    padding: 1px 10px 1px 10px;
+    text-align: center;
 }

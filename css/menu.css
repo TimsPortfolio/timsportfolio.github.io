@@ -1,19 +1,21 @@
 .menubar{/*Blue bar that goes all the way across the screen.*/
     background-color:cornflowerblue;
     color:white;
-    padding:1px;
+    padding:3px;
 }
 
 .droplink{/*Remove link decoration if menu item is link.*/
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
+    font: bold 25px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: black;
     padding: 1px 10px 1px 10px;
+
+
     text-align: center;
 }
 
 .droplink:hover{/*Menu item hover change color*/
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
+    font: bold 25px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
     color: #3c3c3c;
     padding: 1px 10px 1px 10px;
@@ -23,7 +25,7 @@
 .dropbtn {/* Dropdown Button */
     background-color: cornflowerblue;
     padding: 0px;
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
+    font: bold 25px Georgia, 'Times New Roman', Times, serif;
     border: none;
 }
   
@@ -55,13 +57,7 @@
   
 .dropdown:hover .dropbtn {background-color: cornflowerblue;}/* Change the background color of the dropdown button when the dropdown content is shown */
 
-.menu {
-    font: bold 30px Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    color: black;
-    padding: 1px 10px 1px 10px;
-    text-align: center;
-}
+
 .menu:hover{
     font: bold 30px Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
