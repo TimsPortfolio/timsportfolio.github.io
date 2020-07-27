@@ -1,10 +1,10 @@
 /*MAIN TEXT*/
-body {
+body{
     background-color: Ivory;
 }
 p{
-    font-size: 20px;
     text-align: center;
+    font-size: 20px;
 }
 h1{
     text-align: center;
@@ -19,18 +19,17 @@ h3{
     font-size: 25px;
 }
 ol{
-    font-size: 20px;
     text-align: center;
+    font-size: 20px;
     list-style-position: inside;
 }
 ul{
-    font-size: 20px;
     text-align: center;
+    font-size: 20px;
     list-style-position: inside;
 }
-  /******************/
- /*OTHER CUSTOM CSS*/
-/******************/
+
+/*OTHER CUSTOM CSS*/
 p.story{
     text-align: justify;
     text-indent: 50px;
