@@ -48,6 +48,9 @@ p.story{
     border-left: 0px solid #000000;
     text-align: center;
 }
+.button:hover{
+    color: lightgray;
+}
 .center {
     display: block;
     margin-left: auto;
