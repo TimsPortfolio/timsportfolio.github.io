@@ -6,13 +6,17 @@
     <meta name="keywords" content="Timothy's Portfolio">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
+    <title>Javascript</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
+<link rel="stylesheet" href="Javascript.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 2.21.3, nicepage.com">
     <link rel="icon" href="images/favicon.png">
+    
+    
+    
+    
     
     
     <script type="application/ld+json">{
@@ -21,7 +25,7 @@
 		"name": "Timothys Portfolio",
 		"url": "index.html"
 }</script>
-    <meta property="og:title" content="Home">
+    <meta property="og:title" content="Javascript">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <meta property="og:url" content="index.html">
@@ -95,16 +99,152 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-section-1" id="sec-2233">
+    <section class="u-align-center u-clearfix u-section-1" id="sec-2877">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-text u-text-1">Here is a collection of things I have done in Javascript.</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-4ec4">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-default u-text-1">Welcome to Timothy's Portfolio. This websites showcases some of the things I have done and also some other things I like.</p>
-        <h1 class="u-text u-text-default u-text-2">About this site</h1>
-        <img src="images/53e4d6434e52af14f6da8c7dda793678153bdee757596c4870267dd19e4ac25fb0_1280.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="720">
-        <img src="images/53e4d540485ba414f6da8c7dda793678153bdee757596c4870267dd19e4ac25fb0_1280.png" alt="" class="u-image u-image-default u-image-2" data-image-width="1280" data-image-height="640">
-        <p class="u-text u-text-default u-text-3">This website was built originally with just HTML, CSS, and Javascript. However it became a little cumbersome to do some things, esecially copy and paste the header and footer in every page, so I decided to use <a href="https://nicepage.com" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-1" target="_blank">Nicepage</a>. Nicepage is a drag and drop editor that allows a lot more flexibility then a traditionally drag and drop editor, which allows you to completely customize everything on your website.
+        <h1 class="u-text u-text-default u-text-1">Sun Setting<br>
+        </h1>
+        <p class="u-text u-text-default u-text-2">Here is a project I coded on Khan Academy, where you can program using javascript and processing js. I coded it to have the sun start at the top then slowly move to the bottom as the background color slowly changes to simulate a sunset.</p>
+        <div class="u-clearfix u-custom-html u-custom-html-1">
+          <p>
+            <canvas id="mycanvas"></canvas>
+          </p>
+          <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+          <script> var sketchProc = function(processingInstance) {
+        with (processingInstance) {
+            size(400, 400); 
+            frameRate(30);
+            var gradient = function(type,x,y,width,height,startR,startG,startB,endR,endG,endB){
+                if(type === "vertical"){
+                    var currentR = startR;
+                    var currentG = startG;
+                    var currentB = startB;
+                    var currentLine = 0;
+                    noStroke();
+                    for (var i = 0; i < height; i++){
+                        fill(currentR,currentG,currentB);
+                        rect(x,y+currentLine,width,1);
+                        currentLine++;
+                        currentR = startR+((endR-startR)/height)*currentLine;
+                        currentG = startG+((endG-startG)/height)*currentLine;
+                        currentB = startB+((endB-startB)/height)*currentLine;
+                    }
+                } else if(type === "horizontal"){
+                    var currentR = startR;
+                    var currentG = startG;
+                    var currentB = startB;
+                    var currentLine = 0;
+                    noStroke();
+                    for (var i = 0; i < width; i++){
+                        fill(currentR,currentG,currentB);
+                        rect(x+currentLine,y,1,height);
+                        currentLine++;
+                        currentR = startR+((endR-startR)/width)*currentLine;
+                        currentG = startG+((endG-startG)/width)*currentLine;
+                        currentB = startB+((endB-startB)/width)*currentLine;
+                    }
+                } else if (type === "central"){
+                    var currentR = startR;
+                    var currentG = startG;
+                    var currentB = startB;
+                    var currentLine = 0;
+                    var circleWidth = width;
+                    var circleHeight = height;
+                    noStroke();
+                    fill(currentR,currentG,currentB);
+                    rect(x,y,width,height);
+                    for (var i = 0; i < ((width+height)/2); i++){
+                        fill(currentR,currentG,currentB);
+                        ellipse(x+width/2,y+height/2,circleWidth,circleHeight);
+                        currentLine++;
+                        circleWidth -= (width+height)/2/height;
+                        circleHeight -= (width+height)/2/width;
+                        currentR = (startR+((endR-startR))/width*currentLine);
+                        currentG = (startG+((endG-startG))/width*currentLine);
+                        currentB = (startB+((endB-startB))/width*currentLine);
+                    }
+                } else if (type === "ellipse"){
+                    var currentR = startR;
+                    var currentG = startG;
+                    var currentB = startB;
+                    var currentLine = 0;
+                    var circleWidth = width;
+                    var circleHeight = height;
+                    noStroke();
+                    fill(currentR,currentG,currentB);
+                    for (var i = 0; i < ((width+height)/2); i++){
+                        fill(currentR,currentG,currentB);
+                        ellipse(x+width/2,y+height/2,circleWidth,circleHeight);
+                        currentLine++;
+                        circleWidth -= (width+height)/2/height;
+                        circleHeight -= (width+height)/2/width;
+                        currentR = (startR+((endR-startR))/width*currentLine);
+                        currentG = (startG+((endG-startG))/width*currentLine);
+                        currentB = (startB+((endB-startB))/width*currentLine);
+                    }
+                }
+            };
+            var sunHeight = -200;
+            var count = 0;
+            draw = function() {
+                gradient("vertical",0,0,400,400,135+((36-135)/400)*count,206+((48-206)/400)*count,(250+((295-250))/400*count),135+((295-135)/400)*count,206+((103-206)/400)*count,(250+((10-250))/400*count));
+                gradient("ellipse",125,sunHeight,150,150,255,155,0,460,349,0);
+                gradient("vertical",0,300,400,100,71,61,174,0,0,255);
+                if(sunHeight === 310){
+                    sunHeight = -200;
+                    count = 0;
+                } else {
+                sunHeight++;
+                count++;
+                }
+            };
+        }};
+        // Get the canvas that Processing-js will use
+        var canvas = document.getElementById("mycanvas"); 
+        // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+        var processingInstance = new Processing(canvas, sketchProc); </script>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="sec-759e">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-1">Javascript Function I Wrote<br>
+        </h1>
+        <p class="u-text u-text-default u-text-2">Here is a list of function I wrote. Some of them wil need processing JS in order to work.</p>
+        <h2 class="u-text u-text-default u-text-3">Gradient Maker<br>
+        </h2>
+        <a href="files/gradientfunction.mjs" class="u-btn u-button-style u-file-link u-btn-1" target="_blank">Get the Code</a>
+        <p class="u-text u-text-default u-text-4">This functions can draw rectangles and ellipses with gradents to color them instead of a solid color. This is also the function that is being used to draw the sun setting animation above. Requires Processing JS.<br>Use the function with this code: gradient(type,x,y,width,height,startR,startG,startB,endR,endG,endB)<br>
         </p>
-        <p class="u-text u-text-4">You can place different elements on top of each other.</p>
-        <p class="u-text u-text-5">After I design the website it gives me all the code, which allows me to edit the code even more.<br>Right now it may be messy and boring because I just transfered everything over to nicepage. Soon I will go back and finish refining the pages.
+        <p class="u-text u-text-default u-text-5"><b>Type</b>
+          <br>Select what shape you want your gradient to be (must be placed in quotes):<br>Horizontal: A rectangle with a gradient going from left to right<br>Vertical: A rectangle with a gradient going from top to bottom.<br>Central: A rectangle with a gradient going from outside to inside.<br>Ellipse: An ellipse with a gradient going from outside to inside.<br><b>X,Y</b>
+          <br>The x and y coordinate in the top left corner.<br><b>Width,Height</b>
+          <br>The width and height of the shape.<br><b>startR,startG,startB</b>
+          <br>The start color of the gradient in rgb<br><b>endR,endG,endB</b>
+          <br>The end color of the gradient in rgbGrid Maker<br>
+        </p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-4" id="sec-28a2">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Grid Maker<br>
+        </h2>
+        <p class="u-text u-text-default u-text-2">This function can draw a rectangular grid. Requires Processing JS.<br>Use the function with this code: grid(x,y,width,height,xSpace,ySpace)
+        </p>
+        <p class="u-text u-text-default u-text-3"><b>x,y<br></b>The x and y coordinate of the top left of the grid.<br><b>width,height</b>
+          <br>The width and height of the grid.<br><b>xSpace,ySpace</b>
+          <br>The spacing between the lines in the grid starting at the top left.<br>
+          <br>To change the color and thickness of the grid, use the stroke, strokeWeight, and fill functions.
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-16ef">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-default u-text-1">If you would like to see a bunch of random messy projects I made in javascript, please see my&nbsp;<a href="https://www.khanacademy.org/profile/Timcraftmine/projects" target="_blank">Khan Academy Profile</a>. It's very clutered with random stuff and projects that don't work, so be careful. (also some projects say "WIP" (stands for 'Work in Progress'), but I'm not planning to go back to them anytime soon right now lol).
         </p>
       </div>
     </section>

@@ -6,9 +6,9 @@
     <meta name="keywords" content="Timothy's Portfolio">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
+    <title>Shortcuts</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
+<link rel="stylesheet" href="Shortcuts.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 2.21.3, nicepage.com">
@@ -21,12 +21,12 @@
 		"name": "Timothys Portfolio",
 		"url": "index.html"
 }</script>
-    <meta property="og:title" content="Home">
+    <meta property="og:title" content="Shortcuts">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <meta property="og:url" content="index.html">
   </head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-clearfix u-custom-color-2 u-header u-sticky u-header" id="sec-2de0"><div class="u-clearfix u-sheet u-sheet-1">
+  <body class="u-body"><header class="u-clearfix u-custom-color-2 u-header u-sticky u-header" id="sec-2de0"><div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-custom-font u-font-georgia u-text u-text-default u-title u-text-1">
           <a class="u-border-2 u-border-black u-btn u-btn-rectangle u-button-style u-none u-btn-1" href="Home.html">Timothy's Portfolio</a>
         </h1>
@@ -95,16 +95,19 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-center u-clearfix u-section-1" id="sec-2233">
+    <section class="u-align-center u-clearfix u-section-1" id="sec-c877">
       <div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-text u-text-default u-text-1">Welcome to Timothy's Portfolio. This websites showcases some of the things I have done and also some other things I like.</p>
-        <h1 class="u-text u-text-default u-text-2">About this site</h1>
-        <img src="images/53e4d6434e52af14f6da8c7dda793678153bdee757596c4870267dd19e4ac25fb0_1280.jpg" alt="" class="u-image u-image-default u-image-1" data-image-width="1280" data-image-height="720">
-        <img src="images/53e4d540485ba414f6da8c7dda793678153bdee757596c4870267dd19e4ac25fb0_1280.png" alt="" class="u-image u-image-default u-image-2" data-image-width="1280" data-image-height="640">
-        <p class="u-text u-text-default u-text-3">This website was built originally with just HTML, CSS, and Javascript. However it became a little cumbersome to do some things, esecially copy and paste the header and footer in every page, so I decided to use <a href="https://nicepage.com" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-1" target="_blank">Nicepage</a>. Nicepage is a drag and drop editor that allows a lot more flexibility then a traditionally drag and drop editor, which allows you to completely customize everything on your website.
+        <p class="u-text u-text-default u-text-1">Welcome to my shortcuts page. This is where I will document all of the weird, fun, and sometimes useful shortcuts.</p>
+        <h1 class="u-text u-text-default u-text-2">What are shortcuts?</h1>
+        <p class="u-text u-text-default u-text-3">Shorcuts are automations that will preform a series of tasks once you trigger it. This is useful for automating repetative tasks, but can also be used to create fun programs. Most of the shorcuts that are mentioned here are not used to automate a task but to do a completely new job that probably wasn't needed in the first place.</p>
+        <h1 class="u-text u-text-default u-text-4">My shortcuts<br>
+        </h1>
+        <h2 class="u-text u-text-default u-text-5">Verification - 7/28/20</h2>
+        <p class="u-text u-text-default u-text-6">This applet uses both Apple Shortcuts and <a href="https://ifttt.com/" class="u-btn u-button-style u-none u-text-palette-1-base u-btn-1" target="_blank">IFTTT</a>. It is just a simple identity verification app that uses your username and password, then it has an email and phone call verification. It starts with Apple Shortcuts by taking your entered email and password, hashing them and checking them against a stored hash. It then generates a random 6 digit number and emails it. This number has to be typed in as well. Then a random 4 digit number is generated, and sends an email to IFTTT to call you with the 4 digit number. You have to type this number in as well. It then checks if you failed any of the verification steps. If you did, then it will say that you failed verification, but it won't tell you which steps you failed. You just have to start over. Otherwise it will tell you that you passed. Right now the verification is protecting anything, and the email and phone call is being sent to the same phone that you are doing the verification on, but it is still fun to see it's possible.
         </p>
-        <p class="u-text u-text-4">You can place different elements on top of each other.</p>
-        <p class="u-text u-text-5">After I design the website it gives me all the code, which allows me to edit the code even more.<br>Right now it may be messy and boring because I just transfered everything over to nicepage. Soon I will go back and finish refining the pages.
+        <h2 class="u-text u-text-default u-text-7">App Logger<br>
+        </h2>
+        <p class="u-text u-text-default u-text-8">This applet uses Apple Shortcuts. It is actually created with many different shortcuts working together. It logs what apps are opened, then if the app cateogry is blacklisted it can leave the app and either show an alert, lock the phone, or play an alarm. The log can log different things, including location, a photo, and when the phone is unlocked. A detailed explenation of how it works is shown below.<br>Whenever an app is opened, it triggers an automation. There are many different automations for different app cateogries, including games and education. These automations don't really log or block anything, they just relay information to the shortcuts with what cateogry was opened. The shortcut will first figure out if the selected category is blocked. If it isn't, then it will just log the app that is opened, then stop. If it is blocked, it will see what settings are selected. It can just block the app, lock the phone when the app is opened, and play an alarm. The log will by default just log the time and app opened in a text file. It can also log the location and send emails.<br>As mentioned before, there are many different settings. This includes what app cateogries are blocked, email notifications, location information, picture from the front camera, locking the phone, sounding the alarm, and the volume of the alarm. When the settings are opened, it will first ask for a pin. If the pin is correct, it will show a menu with the options, and what the current state of that option is. If you select an option, it will run a shortcut which is responsable for changing the text file from 0 to 1, and vise versa. The settings can also be changed on a mac because all the text files are synced with the cloud.
         </p>
       </div>
     </section>

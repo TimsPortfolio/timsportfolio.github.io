@@ -1,0 +1,12 @@
+.u-section-1 .u-sheet-1 {min-height: 500px}
+.u-section-1 .u-text-1 {margin: 17px auto 0 46px}
+.u-section-1 .u-text-2 {margin: 34px auto 0}
+.u-section-1 .u-text-3 {margin: 8px 0 60px} 
+
+@media (max-width: 1199px){ .u-section-1 .u-text-1 {margin-left: 38px} }
+
+@media (max-width: 991px){ .u-section-1 .u-text-1 {margin-left: 29px} }
+
+@media (max-width: 767px){ .u-section-1 .u-text-1 {margin-left: 22px} }
+
+@media (max-width: 575px){ .u-section-1 .u-text-1 {margin-left: 14px} }
