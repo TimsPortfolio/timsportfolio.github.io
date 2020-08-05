@@ -28884,8 +28884,9 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
  .u-footer {background-image: none}
-.u-footer .u-sheet-1 {min-height: 74px}
-.u-footer .u-custom-html-1 {min-height: 56px; background-image: none; margin: 9px 0 9px} 
+.u-footer .u-sheet-1 {min-height: 153px}
+.u-footer .u-custom-html-1 {min-height: 56px; background-image: none; margin: 9px 0 0}
+.u-footer .u-text-1 {margin: 21px auto 9px} 
 @media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 99px}
 .u-footer .u-custom-html-1 {height: auto; margin-right: initial; margin-left: initial} }
 @media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 76px} }
