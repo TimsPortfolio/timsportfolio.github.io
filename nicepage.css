@@ -11311,6 +11311,7 @@ section.u-image,
 @media (max-width: 991px) {
   .u-sheet.u-content-layout {
     flex-direction: column;
+    align-items: center;
   }
 }
 .u-sidebar {
@@ -16366,10 +16367,6 @@ a.pswp__share--download:hover {
 .u-cookies-consent.show {
   display: block;
 }
-.u-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-}
 .u-gallery-item {
   position: relative;
   overflow: hidden;
@@ -16637,6 +16634,33 @@ a.pswp__share--download:hover {
 .u-slider .u-carousel-inner .u-carousel-item-prev {
   display: flex;
 }
+.u-layout-grid .u-gallery-inner {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  min-height: 100%;
+}
+.u-layout-carousel {
+  display: flex;
+}
+.u-layout-carousel .u-carousel-inner {
+  flex: 1;
+}
+.u-layout-carousel .u-carousel-item {
+  height: 100%;
+  flex-direction: column;
+}
+.u-layout-carousel .u-carousel-item.u-active,
+.u-layout-carousel .u-carousel-item.u-carousel-item-next,
+.u-layout-carousel .u-carousel-item.u-carousel-item-prev {
+  display: flex;
+}
+.u-layout-carousel .u-carousel-item .u-back-slide {
+  position: relative;
+}
+.u-layout-carousel .u-carousel-item .u-over-slide {
+  position: relative;
+  height: auto;
+}
 .u-carousel {
   position: relative;
 }
@@ -16647,7 +16671,6 @@ a.pswp__share--download:hover {
 }
 .u-carousel-item {
   position: relative;
-  display: none;
   align-items: center;
   width: 100%;
   transition: transform 0.6s ease;
@@ -16656,9 +16679,12 @@ a.pswp__share--download:hover {
   perspective: 1000px;
   transform: translate3d(0, 0, 0);
 }
+.u-carousel .u-carousel-item {
+  display: none;
+}
 .u-carousel-item.u-active,
-.u-carousel-item-next,
-.u-carousel-item-prev {
+.u-carousel-item.u-carousel-item-next,
+.u-carousel-item.u-carousel-item-prev {
   display: block;
 }
 .u-carousel-item-next,
@@ -16694,7 +16720,7 @@ a.pswp__share--download:hover {
   background-color: transparent;
   margin: 0;
   -webkit-text-decoration-skip: objects;
-  border: inherit;
+  border: none;
   margin: 0 !important;
   position: absolute;
   top: 0;
@@ -28884,9 +28910,8 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
  .u-footer {background-image: none}
-.u-footer .u-sheet-1 {min-height: 153px}
-.u-footer .u-custom-html-1 {min-height: 56px; background-image: none; margin: 9px 0 0}
-.u-footer .u-text-1 {margin: 21px auto 9px} 
+.u-footer .u-sheet-1 {min-height: 74px}
+.u-footer .u-custom-html-1 {min-height: 56px; background-image: none; margin: 9px 0 9px} 
 @media (max-width: 1199px){ .u-footer .u-sheet-1 {min-height: 99px}
 .u-footer .u-custom-html-1 {height: auto; margin-right: initial; margin-left: initial} }
 @media (max-width: 991px){ .u-footer .u-sheet-1 {min-height: 76px} }
