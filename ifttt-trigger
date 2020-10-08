@@ -1,0 +1,7 @@
+<!doctype html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+function triggerIFTTT(){
+$.ajax({url:"https://maker.ifttt.com/trigger/discord_dank-memer_8ball-yes/with/key/2k9jEQj9B-IOrYMOwWSAG",success: function(result){alert(result)}})
+}
+<button onclick="triggerIFTTT">Trigger IFTTT</button>
